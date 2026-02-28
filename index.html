@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1 Mes Contigo 💜</title>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+        background: linear-gradient(135deg, #1a001f, #2b0033, #000000);
+        font-family: 'Segoe UI', sans-serif;
+        color:white;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        text-align:center;
+    }
+
+    .card{
+        background: rgba(255,255,255,0.05);
+        padding:40px;
+        border-radius:20px;
+        box-shadow: 0 0 40px rgba(186, 85, 211, 0.5);
+        max-width:600px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1{
+        color:#d580ff;
+        font-size:40px;
+        margin-bottom:10px;
+    }
+
+    h2{
+        color:#ffffff;
+        font-weight:normal;
+        margin-bottom:30px;
+    }
+
+    p{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .heart{
+        font-size:30px;
+        animation: heartbeat 1.5s infinite;
+        color:#bb00ff;
+    }
+
+    button{
+        margin-top:30px;
+        padding:12px 25px;
+        border:none;
+        border-radius:30px;
+        background:#bb00ff;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        background:white;
+        color:#bb00ff;
+        transform:scale(1.1);
+    }
+
+    @keyframes heartbeat{
+        0%{transform:scale(1);}
+        25%{transform:scale(1.2);}
+        40%{transform:scale(1);}
+        60%{transform:scale(1.2);}
+        100%{transform:scale(1);}
+    }
+
+    @keyframes fadeIn{
+        from{opacity:0; transform:translateY(20px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Feliz 1 Mes Mi Amor 💜</h1>
+    <h2>Gracias por este primer mes tan hermoso</h2>
+
+    <p>
+        Hoy cumplimos nuestro primer mes juntos, y aunque parezca poco tiempo,
+        para mí ha sido uno de los meses más especiales de mi vida.
+        Gracias por cada risa, cada palabra bonita y cada momento compartido.
+        Prometo seguir cuidándote, amándote y haciéndote feliz cada día.
+    </p>
+
+    <div class="heart">💜</div>
+
+    <button onclick="mostrarMensaje()">Haz click aquí 💌</button>
+
+    <p id="mensajeSecreto" style="margin-top:20px; display:none;">
+        Eres la mejor parte de mis días.  
+        Y esto apenas comienza… 💍✨
+    </p>
+</div>
+
+<script>
+function mostrarMensaje(){
+    document.getElementById("mensajeSecreto").style.display = "block";
+}
+</script>
+
+</body>
+</html>
